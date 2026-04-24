@@ -191,7 +191,12 @@
                     { id: 'item2', text: 'Mobil Otonom (Tanpa Sopir)', matchId: 'ai', icon: '🚗✨' },
                     { id: 'item3', text: 'Kipas Angin Tombol', matchId: 'nonai', icon: '🌀' },
                     { id: 'item4', text: 'Robot Pembersih Lantai Pintar', matchId: 'ai', icon: '🤖🧹' },
-                    { id: 'item6', text: "Aplikasi Pengenal Wajah", matchId: 'ai', icon: '📱👁️' },
+                    { id: 'item5', text: "Aplikasi Pengenal Wajah", matchId: 'ai', icon: '📱👁️' },
+                    { id: 'item6', text: 'Sapu Ijuk Tradisional', matchId: 'nonai', icon: '🧹' },
+                    { id: 'item7', text: 'Asisten Suara (Siri/Google)', matchId: 'ai', icon: '🗣️✨' },
+                    { id: 'item8', text: 'Jam Dinding Jarum', matchId: 'nonai', icon: '🕰️' },
+                    { id: 'item9', text: 'Rekomendasi Video YouTube', matchId: 'ai', icon: '📺✨' },
+                    { id: 'item10', text: 'Senter Listrik', matchId: 'nonai', icon: '🔦' }
                 ],
                 targets: [
                     { id: 'ai', label: 'Mesin Cerdas (Pakai AI)' },
@@ -203,8 +208,8 @@
                 subtitle: "Misi: Visi Komputer vs Visi Manusia",
                 parts: [
                     {
-                        stimulusTitle: "👁️ STIMULUS: Cara Komputer 'Melihat' Objek",
-                        stimulusText: "Sebelumnya, kamu belajar bahwa manusia mengenali kucing menggunakan mata dan otak. Namun, komputer tidak punya mata biologis! Komputer melihat dunia menggunakan Kamera/Sensor.\n\nKomputer memecah gambar menjadi kotak-kotak kecil berisi angka yang disebut PIKSEL (Pixel). Kecerdasan Artifisial lalu mencari POLA dari deretan angka piksel tersebut untuk membedakan apakah itu gambar kucing atau anjing.",
+                        stimulusTitle: "👁️ STIMULUS 1: Cara Komputer 'Melihat' Objek",
+                        stimulusText: "Sebelumnya, kamu belajar bahwa manusia mengenali kucing menggunakan mata dan otak. Namun, komputer tidak punya mata biologis! Komputer melihat dunia menggunakan Kamera/Sensor.\n\nKecerdasan Artifisial (AI) mencari POLA dari data gambar yang dikumpulkan tersebut untuk membedakan apakah itu gambar kucing atau anjing.",
                         questions: [
                             {
                                 id: 'q1', type: 'single',
@@ -223,17 +228,23 @@
                                 text: "3. Terkadang sistem pengenal gambar (AI) keliru, misalnya mengira kue muffin berkerut sebagai anjing chihuahua. Mengapa AI bisa keliru? (Pilih 2 jawaban benar)",
                                 options: ["Pola angka piksel kedua gambar tersebut sangat mirip", "AI memiliki perasaan dan suka bercanda seperti manusia", "Data gambar untuk latihan AI mungkin belum cukup banyak", "Komputer sedang kehabisan memori penyimpanan"],
                                 correct: [0, 2] 
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        stimulusTitle: "📸 STIMULUS 2: Misteri Filter Wajah di HP",
+                        stimulusText: "Pernahkah kamu menggunakan filter telinga kucing yang lucu di kamera HP? Aplikasi itu menggunakan Visi Komputer (AI) lho!\n\nKamera memecah wajahmu menjadi kotak-kotak kecil berisi angka yang disebut PIKSEL (Pixel). Komputer lalu mencari pola piksel yang bentuknya mirip mata dan hidung. Agar letak filter tidak meleset saat kepalamu bergerak, AI harus rajin dilatih mengenali jutaan foto wajah manusia yang berbeda-beda!",
+                        questions: [
                             {
                                 id: 'q4', type: 'single',
-                                text: "4. Apa sebutan untuk kotak-kotak kecil berisi angka yang dibaca oleh komputer saat mengenali gambar?",
+                                text: "4. Apa sebutan untuk kotak-kotak kecil berisi angka yang dibaca oleh komputer saat mengenali gambar wajahmu?",
                                 options: ["A. Lensa", "B. Piksel (Pixel)", "C. Kamera", "D. Suara"],
                                 correct: 1
                             },
                             {
                                 id: 'q5', type: 'single',
-                                text: "5. Mengapa komputer membutuhkan sangat banyak data gambar untuk berlatih (machine learning)?",
-                                options: ["A. Agar komputer tidak cepat rusak", "B. Agar memori komputer cepat penuh", "C. Supaya komputer bisa mengenali pola dengan lebih akurat", "D. Karena komputer suka mengoleksi foto"],
+                                text: "5. Mengapa komputer membutuhkan sangat banyak foto wajah orang yang berbeda-beda untuk berlatih?",
+                                options: ["A. Agar baterai komputer tidak cepat rusak", "B. Agar memori HP kita menjadi cepat penuh", "C. Supaya AI bisa mengenali pola wajah dengan lebih akurat walau bentuk wajah manusia berbeda-beda", "D. Karena komputer suka mengoleksi foto manusia"],
                                 correct: 2
                             }
                         ]
@@ -243,8 +254,8 @@
             3: {
                 title: "Laboratorium 3",
                 subtitle: "Misi: Manfaat AI di Kehidupan",
-                stimulusTitle: "💡 STIMULUS: AI dalam Kehidupan Sehari-hari",
-                stimulusText: "Kecerdasan Artifisial diciptakan untuk mempermudah pekerjaan manusia, mengambil keputusan dengan cepat, dan menyelesaikan masalah. Tentukan apakah pernyataan di bawah ini Benar atau Salah sesuai materi yang telah dipelajari!",
+                stimulusTitle: "💡 STUDI KASUS: Liburan Keluarga Budi",
+                stimulusText: "Hari Minggu ini, keluarga Budi pergi berlibur. Sebelum berangkat, Ayah membuka aplikasi peta (Google Maps) untuk mencari rute tercepat dan tidak macet. Di mobil, Budi membuka kunci layar HP-nya hanya dengan menatap kamera (Face Unlock).\n\nBudi lalu membuka YouTube, dan anehnya, YouTube langsung merekomendasikan video kartun favorit Budi padahal ia belum mengetik apa-apa! Budi sadar bahwa Kecerdasan Artifisial (AI) sedang bekerja membantunya.\n\nBerdasarkan cerita Budi dan materi yang telah dipelajari, tentukan pernyataan di bawah ini Benar atau Salah!",
                 questions: [
                     {
                         id: 'k1', text: "1. Aplikasi peta digital (seperti Google Maps) menggunakan AI untuk menganalisis data lalu lintas dan mencarikan rute tercepat yang tidak macet.",
@@ -628,7 +639,7 @@
                             </button>
                             <div className="flex items-center gap-2 bg-slate-800 px-3 py-1.5 xl:px-5 xl:py-2 rounded-lg text-sm md:text-base xl:text-xl border border-cyan-700 shadow-inner">
                               <Icons.Star className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 text-yellow-400 fill-yellow-400 animate-pulse" />
-                              <span className="font-bold text-cyan-100 font-tech">{correctCount} <span className="text-cyan-600">/ 45</span></span>
+                              <span className="font-bold text-cyan-100 font-tech">{correctCount} <span className="text-cyan-600">/ 50</span></span>
                             </div>
                             <button onClick={toggleFullscreen} className="p-1.5 xl:p-2 bg-slate-800 hover:bg-cyan-900 text-cyan-400 rounded-lg hidden sm:block transition border border-cyan-800">
                                {isFullscreen ? <Icons.Minimize className="w-5 h-5 md:w-6 md:h-6 xl:w-8 xl:h-8"/> : <Icons.Maximize className="w-5 h-5 md:w-6 md:h-6 xl:w-8 xl:h-8"/>}
@@ -1460,7 +1471,7 @@
 
                 if (isAllCorrect) {
                     playSfx('correct');
-                    for(let i=0; i<5; i++) { if (onCorrect) onCorrect(); }
+                    for(let i=0; i<10; i++) { if (onCorrect) onCorrect(); }
                     setCompleted(true);
                 } else {
                     playSfx('incorrect');
@@ -2279,7 +2290,7 @@
                     <p className="text-sm md:text-lg text-slate-300 mt-2">Kadet Programmer: <span className="font-bold text-cyan-100">{playerName}</span></p>
                     <div className="mt-4 pt-4 border-t border-slate-700">
                         <span className="text-xs md:text-sm text-slate-500 font-tech">AKURASI SISTEM</span>
-                        <div className="text-3xl md:text-5xl font-black text-cyan-400 font-tech mt-1">{correctCount} <span className="text-xl md:text-3xl text-cyan-700">/ 45</span></div>
+                        <div className="text-3xl md:text-5xl font-black text-cyan-400 font-tech mt-1">{correctCount} <span className="text-xl md:text-3xl text-cyan-700">/ 50</span></div>
                     </div>
                   </div>
 
